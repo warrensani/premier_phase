@@ -9,7 +9,6 @@
 
 
 
-    <?xml version="1.0" encoding="utf-8"?>
     <androidx.appcompat.widget.LinearLayoutCompat
 
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -139,7 +138,7 @@
 
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/detail1"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
@@ -153,7 +152,6 @@
 
                 android:paddingBottom="20dp"
                 app:cardCornerRadius="0dp"
-                app:layout_constraintBottom_toTopOf="@id/nAutrecité"
                 app:layout_constraintLeft_toLeftOf="parent"
 
                 app:layout_constraintTop_toBottomOf="@+id/iconimg"
@@ -182,7 +180,7 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
 
             <LinearLayout
@@ -282,7 +280,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/reserver"
+                    android:id="@+id/btnAjouterCommande"
                     android:layout_marginRight="10dp"
                     app:cardCornerRadius="15dp"
 
@@ -307,7 +305,7 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="102dp"
 
 
             android:layout_gravity="bottom"

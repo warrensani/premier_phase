@@ -5,11 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".registration">
 
 
-
-     <androidx.appcompat.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
 
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -68,7 +67,24 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:padding="9dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="INSCRITPION"
+                    android:textColor="@color/black"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:padding="9dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginRight="12dp"
                     android:textSize="16dp"
@@ -92,6 +108,7 @@
                     app:cardBackgroundColor="@color/black_25">
 
                     <EditText
+                        android:id="@+id/editTextEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="9dp"
@@ -133,6 +150,7 @@
                     app:cardBackgroundColor="@color/black_25">
 
                     <EditText
+                        android:id="@+id/editTextPassword"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="9dp"
@@ -146,6 +164,7 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btnCreate"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
 
@@ -155,6 +174,31 @@
                     android:layout_marginLeft="12dp"
                     android:layout_marginRight="12dp"
                     app:cardBackgroundColor="@color/red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:textSize="26dp"
+                        android:text="creer"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"  />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/connxion"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:cardBackgroundColor="@color/black">
 
                     <TextView
                         android:layout_width="wrap_content"
